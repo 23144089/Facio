@@ -1,0 +1,21 @@
+{
+  "name": "facio-prototype",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"node server.mjs\"",
+    "dev:client": "vite",
+    "dev:server": "node server.mjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "vite": "^7.1.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ws": "^8.21.3"
+  }
+}
